@@ -16,4 +16,8 @@ public class Vendedor extends Funcionario{
     public void setComissao(double comissao) {
         this.comissao = comissao;
     }
+
+    public double calcularComissao(){
+        return comissao;
+    }
 }
