@@ -1,4 +1,7 @@
 package Enum;
 
-public class Departamento {
+public enum Departamento {
+    VENDAS,
+    FINANCEIRO,
+    RH
 }
