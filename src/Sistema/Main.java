@@ -17,5 +17,18 @@ public class Main {
         Funcionario v1 = new Vendedor("Aelcio", 4000, Departamento.VENDAS, 1500);
         Funcionario v2 = new Vendedor("Evely", 3500, Departamento.VENDAS, 1200);
 
+        listaFuncionarios.add(g1);
+        listaFuncionarios.add(g2);
+        listaFuncionarios.add(v1);
+        listaFuncionarios.add(v2);
+
+        for (Funcionario f : listaFuncionarios) {
+            System.out.println(f.getNome() + " recebe: R$ " + f.calcularSalario());
+
+            if (f instanceof Gerente) {
+                Gerente g = (Gerente) f;
+                System.out.println("-- Bônus do gerente: R$ " + g.getBonus());
+            }
+        }
     }
 }
