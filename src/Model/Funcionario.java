@@ -7,9 +7,10 @@ public class Funcionario {
     private double salarioBase;
     private Departamento departamento;
 
-    public Funcionario(String nome, Departamento departamento) {
+    public Funcionario(String nome, double salarioBase, Departamento departamento) {
         this.nome = nome;
         this.departamento = departamento;
+        setSalarioBase(salarioBase);
     }
 
     public String getNome() {
