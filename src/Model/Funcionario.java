@@ -36,4 +36,8 @@ public class Funcionario {
             this.salarioBase = salarioBase;
         }
     }
+
+    public double calcularSalario() {
+        return salarioBase;
+    }
 }

@@ -1,4 +1,10 @@
 package Model;
+import Model.Funcionario;
 
-public class Gerente {
+public class Gerente extends Funcionario {
+    private double bonus;
+
+    public Gerente(String nome, double salarioBase, double bonus) {
+        super(nome, salarioBase);
+    }
 }
