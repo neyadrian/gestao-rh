@@ -17,6 +17,7 @@ public class Gerente extends Funcionario {
         this.bonus = bonus;
     }
 
+    @Override
     public double calcularSalario() {
         return getSalarioBase() + bonus;
     }
