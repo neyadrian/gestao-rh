@@ -21,14 +21,6 @@ public class Funcionario {
         return salarioBase;
     }
 
-    public Departamento getDepartamento() {
-        return departamento;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public void setSalarioBase(double salarioBase) {
         if (salarioBase < 0) {
             System.out.println("Salários não pode ser negativo");
